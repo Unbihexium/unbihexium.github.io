@@ -1,0 +1,22 @@
+.container-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:  calc(400/2);
+
+}
+.image {
+    width: 200px;
+}
+
+.text-container {
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    align-items: center;
+    margin: 2px;
+}
+
+.cat {
+    text-align: center;
+}
