@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<title>rectExample</title>
+		<meta charset='utf-8' />
+	</head>
+	<body>
+		<canvas id='example'>Обновите браузер</canvas>
+		<script>
+			var example = document.getElementById("example"),
+			    ctx     = example.getContext('2d');
+			example.height = 480;
+			example.width  = 640;
+			ctx.fillStyle = '#FFFF00'; // меняем цвет клеток
+			ctx.fillRect(20, 20, 370, 250);
+            ctx.fillStyle = '#000000';
+			ctx.beginPath();
+    		ctx.moveTo(20, 30);
+    		ctx.lineTo(170,145);
+    		ctx.lineTo(20,260);
+    		ctx.fill();
+
+			ctx.beginPath();
+    		ctx.moveTo(370+20, 30);
+    		ctx.lineTo(195+30,145);
+    		ctx.lineTo(370+20,260);
+    		ctx.fill();
+
+			ctx.fillStyle = '#00FF00';
+			ctx.beginPath();
+    		ctx.moveTo(40, 20);
+    		ctx.lineTo(390/2,145);
+    		ctx.lineTo(370,20);
+    		ctx.fill();
+
+			ctx.beginPath();
+    		ctx.moveTo(40, 270);
+    		ctx.lineTo(390/2,145);
+    		ctx.lineTo(370,270);
+    		ctx.fill();
+			
+			
+		</script>
+		<img src='/lab6/Новый рисунок.svg'/>
+	</body>
+</html>
