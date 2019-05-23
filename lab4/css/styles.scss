@@ -1,0 +1,34 @@
+$blue: #3bbfce;
+$margin: 6px;
+
+.content-navigation {
+  border-color: $blue;
+  color: darken($blue, 9%);
+}
+
+.border {
+  padding: $margin / 2;
+  margin: $margin / 2;
+  border-color: $blue;
+}
+
+@import 'anotherstyles.scss';
+
+
+input {
+    border: 1px solid gray;
+    background: white;
+  
+    &[type=text] { color: black; }
+    &.some_class { display: none; }
+  }
+  
+
+  @mixin border-radius($radius) {
+            border-radius: $radius;
+  }
+  
+  .box { 
+    width: 100px;
+    @include border-radius(10px); }
+  
